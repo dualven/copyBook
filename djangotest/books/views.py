@@ -10,8 +10,7 @@ class IndexView(ListView):
     model = Book
     template_name = 'index.html'
     context_object_name = 'booklist'
-	
-	paginate_by = 6
+    paginate_by = 6
 
     def get_context_data(self, **kwargs):
         # 先调用父类的方法，获取默认的context
